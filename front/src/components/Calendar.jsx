@@ -4,7 +4,6 @@ import {styles} from '../style'
 import { SectionWrapper } from "../hoc";
 //import {projects} from '../constants'
 import { fadeIn, textVariant } from "../utils/motion";
-import { TestCanvas } from './canvas'
 import { useState } from 'react';
 const day1Events  = [
   {
@@ -20,31 +19,68 @@ const day1Events  = [
     icon: '🕒', 
   },
   {
-    time: 'Wednesday 5:30 PM',
-    title: 'The Art of Naming ',
-    info: 'A keynote speech on the significance of naming celestial bodies.',
+    time: 'Wednesday 6:00 PM',
+    title: 'Planet Showcase 1: Pyroterra & Aquamara  ',
+    info: 'Pyroterra & Aquamara - Unveiling of the planets, their lore, and opening bids.',
     icon: '🕒', 
   },
   {
-    time: 'Wednesday 5:30 PM',
-    title: 'The Art of Naming ',
-    info: 'A keynote speech on the significance of naming celestial bodies.',
+    time: 'Wednesday 7:00 PM',
+    title: 'Interstellar Intermission',
+    info: 'A virtual lounge for participants to discuss the planets and network.',
     icon: '🕒', 
   },
+  {
+    time: 'Wednesday 7:30 PM',
+    title: 'Planet Showcase 2: Zephyria & Sylveron',
+    info: 'Presentation of the planets and commencement of bidding.',
+    icon: '🕒', 
+  },
+  {
+    time: 'Wednesday 9:00 PM',
+    title: 'Cosmic Concert',
+    info: 'Live-streamed performance by intergalactic-themed musicians.',
+    icon: '🕒', 
+  }
 ];
 const day2Events   = [
   {
-    time: 'Thursday 9:00 - 10:00 PDT',
-    title: 'Breakfast',
-    icon: '🍽️', 
-  },
-  {
-    time: 'Thursday 10:15 - 10:40 PDT',
-    title: 'Time for the Timing Object',
-    info: 'Christoph Guttandin',
-    company: 'Media Codings',
+    time: 'Thursday 5:00 PM',
+    title: 'Day 1 Recap & Day 2 Kickoff',
+    info: 'Briefing on the previous day’s outcomes and what to expect on Day 2.',
     icon: '🕒', 
   },
+  {
+    time: 'Thursday 5:30 PM',
+    title: 'Planet Showcase 3: Chronosia & Nocturne',
+    info: 'Exploration and bidding on these unique planets.',
+    icon: '🕒', 
+  },
+  {
+    time: 'Thursday 6:30 PM',
+    title: 'Auction Break & Virtual Observatory Tour',
+    info: 'A guided tour of a digital galaxy, including trivia and fun facts.',
+    icon: '🕒', 
+  },
+  {
+    time: 'Thursday 7:00 PM',
+    title: 'Planet Showcase 4: Aurelia & Crysallis',
+    info: 'Insight into the planets’ features and live auction.',
+    icon: '🕒', 
+  },
+  {
+    time: 'Thursday 8:00 PM',
+    title: 'Closing the Cosmos',
+    info: 'Final bidding, closing remarks, and announcement of the winning names.',
+    icon: '🕒', 
+  },
+  {
+    time: 'Thursday 8:30 PM',
+    title: 'Galactic Gratitude Party',
+    info: 'A celebratory end to the event with virtual fireworks and a live DJ set.',
+    icon: '🕒', 
+  },
+
 ];
 
 const EventCard = ({ time, title, info, company, icon }) => (
@@ -78,13 +114,13 @@ const Calendar = () => {
           onClick={() => setActiveDay('day1')}
           className={`rounded-full px-6 py-2 ${activeDay === 'day1' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
         >
-          Day 1: Wednesday, Oct 12th
+          Day 1: Galactic Gathering
         </button>
         <button
           onClick={() => setActiveDay('day2')}
           className={`rounded-full px-6 py-2 ${activeDay === 'day2' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
         >
-          Day 2: Thursday, Oct 13th
+          Day 2: Stellar Stakes
         </button>
       </div>
       <Schedule events={activeDay === 'day1' ? day1Events : day2Events} />

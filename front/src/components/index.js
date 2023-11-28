@@ -5,7 +5,9 @@ import About from './About';
 import Intro from './Intro';
 import Work from './Works';
 import Calendar from './Calendar'
+import Registration from './Registration';
 export {
+  Registration,
   Calendar,
   Work,
   About,
