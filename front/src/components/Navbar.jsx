@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <nav 
-      className={`${styles.paddingX} w-full flex item-center py-5 fixed top-0 z-20 ${
+      className={`${styles.paddingX} w-full flex item-center py-5 fixed top-0 z-20  border-2 border-red-500 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`
 

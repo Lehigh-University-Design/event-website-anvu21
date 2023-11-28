@@ -14,15 +14,12 @@ const Intro = () => {
 
   
 
-  
-  //template_m2exzjg
-//service_ntgsx82
-//80iRhlogur-A9wOQE
+
   return (
-    <div className="xl:mt-12 xl:flex-row my-40  flex-col-reverse flex gap-x-8 gap-y-10 overflow">
-      <motion.div
+    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden ">
+            <motion.div
       variants= {slideIn('left', "tween",0.2,1)}
-      className= "flex-[0.75]  p-30 rounded-2xl"
+      className= "flex-[0.75] p-8  rounded-2xl border-2 border-red-500"
       >
         <h3 className={styles.specialSectionHeadText}>
           CosmoClaim:
@@ -30,21 +27,23 @@ const Intro = () => {
         <p className={styles.specialSectionHeadText}>
            Bidding Beyond Earth
         </p>
-        
+        <br></br>
+        <p className={styles.specialSectionHeadText}>
+           October 30th-31th, 2023 San Francisco
+        </p>
 
           
       </motion.div>
 
       <motion.div 
             variants= {slideIn('right', "tween",0.2,1)}
-            className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-            >
+            className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] overflow border-2 border-red-500"            >
         <EarthCanvas/>
 
 
       </motion.div>
 
-    </div>
+    </div> 
   )
 }
 
