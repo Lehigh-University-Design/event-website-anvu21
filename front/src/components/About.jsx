@@ -21,7 +21,7 @@ const About = () => {
 
       <motion.div 
             variants= {slideIn('left', "tween",0.2,1)}
-            className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] overflow border-2 border-red-500"            >
+            className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] overflow "            >
         <img src={icon} alt="logo" className="w-full h-full object-cover"/>
 
 
@@ -30,7 +30,7 @@ const About = () => {
 
       <motion.div
       variants= {slideIn('right', "tween",0.2,1)}
-      className= "flex-[0.75] p-8  rounded-2xl border-2 border-red-500"
+      className= "flex-[0.75] p-8  rounded-2xl "
       >
         <h3 className={styles.specialSectionHeadText}>
         How it works:

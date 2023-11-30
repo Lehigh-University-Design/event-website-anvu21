@@ -10,7 +10,7 @@ const Test = () => {
   const earth = useGLTF("./New_planet/scene.gltf");
 
   return (
-    <primitive object={earth.scene} scale={1} position-y={0} rotation-y={0} />
+    <primitive object={earth.scene} scale={1.75} position-y={0} rotation-y={0} />
   );
 };
 

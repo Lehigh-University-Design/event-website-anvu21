@@ -13,7 +13,7 @@ const BUY = () => {
     };
   return (
     <div className="bg-[#915EFF] text-white py-12">
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-8 md:px-12">
         <div className="text-center">
           <h2 className="text-4xl font-bold mb-2">Get Your Tickets Now!</h2>
           <p className="text-xl mb-6">Join us for an unforgettable experience at our upcoming event.</p>
@@ -69,7 +69,7 @@ const Footer = () => {
           <form action="#" method="POST">
             <div className="flex flex-col">
               <input type="email" placeholder="Email address" className="mb-2 px-4 py-2 rounded text-black"/>
-              <button type="submit" className="bg-[#915EFF] hover:bg-[#915EFF] text-black py-2 rounded">Sign Up for Emails</button>
+              <button type="submit" className="bg-[#915EFF] hover:bg-[#8254e5] text-black py-2 rounded">Sign Up for Emails</button>
             </div>
           </form>
         </div>
@@ -81,7 +81,6 @@ const Footer = () => {
           <div className="flex mt-4 md:mt-0">
             <a href="#" className="text-gray-400 text-sm hover:text-gray-300 mx-2">Privacy Policy</a>
             <a href="#" className="text-gray-400 text-sm hover:text-gray-300 mx-2">Terms and Conditions</a>
-            <a href="#" className="text-gray-400 text-sm hover:text-gray-300 mx-2">Do Not Sell Or Share My Personal Information</a>
           </div>
         </div>
       </div>
@@ -91,7 +90,7 @@ const Footer = () => {
 
 const HomePage = () => {
   return (
-    <div className="relative z-0 bg-primary border-2 border-red-500">
+    <div className="relative z-0 bg-primary ">
     <StarsCanvas/>
             <Navbar/>
             <Intro/>
@@ -110,7 +109,7 @@ const HomePage = () => {
 
 const WorkPage = () => {
   return (
-    <div className="relative z-0 bg-primary border-2 border-red-500">
+    <div className="relative z-0 bg-primary ">
 
             <Navbar/>
             <BuyTicketsSection/>
