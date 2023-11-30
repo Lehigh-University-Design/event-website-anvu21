@@ -112,13 +112,13 @@ const Calendar = () => {
       <div className="flex justify-between mb-4">
         <button
           onClick={() => setActiveDay('day1')}
-          className={`rounded-full px-6 py-2 ${activeDay === 'day1' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
+          className={`rounded-full px-6 py-2 ${activeDay === 'day1' ? 'bg-[#915EFF] text-white' : 'bg-black-500'}`}
         >
           Day 1: Galactic Gathering
         </button>
         <button
           onClick={() => setActiveDay('day2')}
-          className={`rounded-full px-6 py-2 ${activeDay === 'day2' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
+          className={`rounded-full px-6 py-2 ${activeDay === 'day2' ? 'bg-[#915EFF] text-white' : 'bg-black-500'}`}
         >
           Day 2: Stellar Stakes
         </button>

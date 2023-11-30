@@ -8,6 +8,7 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
+import {icon} from '../assets'
 
 
 
@@ -15,13 +16,13 @@ import { SectionWrapper } from "../hoc";
 const About = () => {
   return (
     
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden ">
+    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-5 overflow-hidden ">
           
 
       <motion.div 
             variants= {slideIn('left', "tween",0.2,1)}
             className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] overflow border-2 border-red-500"            >
-        
+        <img src={icon} alt="logo" className="w-full h-full object-cover"/>
 
 
       </motion.div>

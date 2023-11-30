@@ -4,7 +4,7 @@ import {styles} from '../style'
 import { SectionWrapper } from "../hoc";
 //import {projects} from '../constants'
 import { fadeIn, textVariant } from "../utils/motion";
-import { TestCanvas } from './canvas'
+import { TestCanvas, Mercury, Purple_planet } from './canvas'
 
 const ProjectCard = ({
   index,
@@ -88,15 +88,20 @@ Each of our planets presents a unique opportunity to leave your mark in the star
       <div className="flex flex-col items-center">
         <TestCanvas />
         <div className={styles.sectionHeadText}>
-            Feature Planets
         </div>
     </div>
 
-  <div>02</div>
-  <div>03</div>
-  <div>04</div>
-  <div>05</div>
-  <div>06</div>
+    <div className="flex flex-col items-center">
+        <Purple_planet />
+        <div className={styles.sectionHeadText}>
+        </div>
+    </div>
+    <div className="flex flex-col items-center">
+        <Mercury />
+        <div className={styles.sectionHeadText}>
+        </div>
+    </div>
+
 
       </div>
     </>

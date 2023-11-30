@@ -6,7 +6,9 @@ import Intro from './Intro';
 import Work from './Works';
 import Calendar from './Calendar'
 import Registration from './Registration';
+import BuyTicketsSection from './BuyTicketsSection'
 export {
+  BuyTicketsSection,
   Registration,
   Calendar,
   Work,
