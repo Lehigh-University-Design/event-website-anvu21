@@ -10,37 +10,37 @@ const day1Events  = [
     time: 'Wednesday 5:00 PM',
     title: 'Opening Ceremony',
     info: 'A virtual welcome, overview of the event, and introduction to the CosmoClaim universe.',
-    icon: '🕒', 
+    icon: '🎉', 
   },
   {
     time: 'Wednesday 5:30 PM',
     title: 'The Art of Naming ',
     info: 'A keynote speech on the significance of naming celestial bodies.',
-    icon: '🕒', 
+    icon: '🖋️', 
   },
   {
     time: 'Wednesday 6:00 PM',
     title: 'Planet Showcase 1: Pyroterra & Aquamara  ',
     info: 'Pyroterra & Aquamara - Unveiling of the planets, their lore, and opening bids.',
-    icon: '🕒', 
+    icon: '🪐', 
   },
   {
     time: 'Wednesday 7:00 PM',
     title: 'Interstellar Intermission',
     info: 'A virtual lounge for participants to discuss the planets and network.',
-    icon: '🕒', 
+    icon: '🌌', 
   },
   {
     time: 'Wednesday 7:30 PM',
     title: 'Planet Showcase 2: Zephyria & Sylveron',
     info: 'Presentation of the planets and commencement of bidding.',
-    icon: '🕒', 
+    icon: '🪐', 
   },
   {
     time: 'Wednesday 9:00 PM',
     title: 'Cosmic Concert',
     info: 'Live-streamed performance by intergalactic-themed musicians.',
-    icon: '🕒', 
+    icon: '🎶', 
   }
 ];
 const day2Events   = [
@@ -48,37 +48,37 @@ const day2Events   = [
     time: 'Thursday 5:00 PM',
     title: 'Day 1 Recap & Day 2 Kickoff',
     info: 'Briefing on the previous day’s outcomes and what to expect on Day 2.',
-    icon: '🕒', 
+    icon: '🔁🚀', 
   },
   {
     time: 'Thursday 5:30 PM',
     title: 'Planet Showcase 3: Chronosia & Nocturne',
     info: 'Exploration and bidding on these unique planets.',
-    icon: '🕒', 
+    icon: '🪐', 
   },
   {
     time: 'Thursday 6:30 PM',
     title: 'Auction Break & Virtual Observatory Tour',
     info: 'A guided tour of a digital galaxy, including trivia and fun facts.',
-    icon: '🕒', 
+    icon: '☕', 
   },
   {
     time: 'Thursday 7:00 PM',
     title: 'Planet Showcase 4: Aurelia & Crysallis',
     info: 'Insight into the planets’ features and live auction.',
-    icon: '🕒', 
+    icon: '🪐', 
   },
   {
     time: 'Thursday 8:00 PM',
     title: 'Closing the Cosmos',
     info: 'Final bidding, closing remarks, and announcement of the winning names.',
-    icon: '🕒', 
+    icon: '🚪', 
   },
   {
     time: 'Thursday 8:30 PM',
     title: 'Galactic Gratitude Party',
     info: 'A celebratory end to the event with virtual fireworks and a live DJ set.',
-    icon: '🕒', 
+    icon: '✨', 
   },
 
 ];
