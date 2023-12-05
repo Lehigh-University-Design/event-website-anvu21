@@ -4,6 +4,7 @@ import {styles} from '../style'
 import { fadeIn, textVariant } from "../utils/motion";
 import { useState } from 'react';
 import { SectionWrapper } from "../hoc";
+import {useNavigate } from 'react-router-dom';
 
 
 // TicketCard.js
@@ -35,6 +36,8 @@ const TicketCard = ({ title, price, features, tag, isSoldOut }) => {
 };
 
 // BuyTicketsSection.js
+
+
 const BuyTicketsSection = () => {
   const tickets = [
     {
@@ -81,9 +84,22 @@ const BuyTicketsSection = () => {
     },
   ];
 
+  let navigate = useNavigate();
+
+  const navigateHome = () => {
+    navigate('/');
+  };
+
   return (
     <div className=" py-12">
       <div className="container mx-auto px-6 md:px-12">
+      <button 
+          onClick={navigateHome} 
+          className="mb-6 bg-[#915EFF] hover:bg-[#8254e5] text-white font-bold py-2 px-4 rounded"
+        >
+          Fly Home
+        </button>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {tickets.map((ticket, index) => (
             <TicketCard key={index} {...ticket} />

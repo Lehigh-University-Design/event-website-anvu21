@@ -1,5 +1,5 @@
 import { Tilt } from "react-tilt";
-import {motion} from 'framer-motion'
+import {motion, AnimatePresence } from 'framer-motion'
 import {styles} from '../style'
 import { SectionWrapper } from "../hoc";
 //import {projects} from '../constants'
@@ -94,15 +94,25 @@ const EventCard = ({ time, title, info, company, icon }) => (
     {company && <p className="text-sm">{company}</p>}
   </div>
 );
+const scheduleVariants = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1, transition: { duration: 0.5 } },
+  exit: { opacity: 0, transition: { duration: 0.5 } }
+};
 
 const Schedule = ({ events }) => (
-  <div className="grid grid-cols-2 gap-1 ">
+  <motion.div
+    className="grid grid-cols-2 gap-1"
+    initial="initial"
+    animate="animate"
+    exit="exit"
+    variants={scheduleVariants}
+  >
     {events.map((event, index) => (
       <EventCard key={index} {...event} />
     ))}
-  </div>
+  </motion.div>
 );
-
 
 const Calendar = () => {
   const [activeDay, setActiveDay] = useState('day1');
@@ -123,7 +133,9 @@ const Calendar = () => {
           Day 2: Stellar Stakes
         </button>
       </div>
-      <Schedule events={activeDay === 'day1' ? day1Events : day2Events} />
+      <AnimatePresence mode='wait'>
+        <Schedule events={activeDay === 'day1' ? day1Events : day2Events} key={activeDay} />
+      </AnimatePresence>
     </div>
   );
 };
